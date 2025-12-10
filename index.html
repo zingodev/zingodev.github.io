@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>CMSC320 Final Project</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>index</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -7511,17 +7511,6 @@ a.anchor-link {
 <!-- End of mermaid configuration --></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 <main>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=7832842a">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><a href="https://colab.research.google.com/github/ashiqur0421/CMSC320_Group_Project/blob/main/project.ipynb" target="_parent"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg"/></a></p>
-</div>
-</div>
-</div>
-</div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=vqJ2hHRG6aGO">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -7539,11 +7528,12 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Header">Header<a class="anchor-link" href="#Header">¶</a></h1><p>Jacob: Did k-fold analysis, Survival Rate vs. Age analysis, wrote the Model selection section, and revised the conclusion/insight section.</p>
-<p>Georgia: Did the introduction, survival rate vs. class analysis in the exploratory data analysis part, and the features' coefficient importance graph to determine which factors influence survival the most after training the model.</p>
-<p>Ashiq: Did the data curation section, survival rate vs fare in the exploratory data analysis section, and the insight and conclusion section based on features' weights from the model.</p>
-<p>Hugh: Participated in data cleaning and preprocessing; wrote the exploratory data analysis for the Sex and Embarked features; analysis of true positive, false positive, true negative, and false positive rates, as well as accuracy, recall, and survival, for different probability cutoffs; and worked on final rewriting and polishing of the tutorial.</p>
-<p>Eshaan: Did the code and analysis for the survival rate vs parents/children and siblings/spouses for checkpoint 2, as well as training the logistic model and encoding the embarked feature in a couple ways to maximize accuracy.</p>
+<h1 id="Contributions">Contributions<a class="anchor-link" href="#Contributions">¶</a></h1><p>Group Members: Md Ashiqur Rahman, Georgia Kalapotharakou, Jacob Plunkert, Eshaan Billing, Hongyu Ma</p>
+<p>Jacob: Did k-fold analysis, Survival Rate vs. Age analysis, wrote the Model selection section, revised the conclusion/insight section, created website submission. (Sections C, D, E, G)</p>
+<p>Georgia: Did the introduction, survival rate vs. class analysis in the exploratory data analysis part, and the features' coefficient importance graph to determine which factors influence survival the most after training the model. (Sections A, C, F, G)</p>
+<p>Ashiq: Did the data curation section, survival rate vs fare in the exploratory data analysis section, and the insight and conclusion section based on features' weights from the model. (Sections B, C, F, G)</p>
+<p>Hugh: Participated in data cleaning and preprocessing; wrote the exploratory data analysis for the Sex and Embarked features; analysis of true positive, false positive, true negative, and false positive rates, as well as accuracy, recall, and survival, for different probability cutoffs; and worked on final rewriting and polishing of the tutorial. (Sections B, C, D, E, F, G)</p>
+<p>Eshaan: Did the code and analysis for the survival rate vs parents/children and siblings/spouses for checkpoint 2, as well as training the logistic model and encoding the embarked feature in a couple ways to maximize accuracy. (Sections C, D, E, F, G)</p>
 </div>
 </div>
 </div>
@@ -7582,7 +7572,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [183]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
@@ -7652,7 +7642,7 @@ By doing the following exploratory analysis on the dataset, the relationships be
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [184]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#titanic_df = pd.read_csv("Titanic-Dataset.csv")</span>
@@ -7680,7 +7670,7 @@ By doing the following exploratory analysis on the dataset, the relationships be
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-<div class="colab-df-container" id="df-5798fd91-ac36-43d3-a5b4-91683e772407">
+<div class="colab-df-container" id="df-194dae30-63c5-4dae-a92c-5a574dc86854">
 <div>
 <style scoped="">
     .dataframe tbody tr th:only-of-type {
@@ -7885,7 +7875,7 @@ By doing the following exploratory analysis on the dataset, the relationships be
 </div>
 <div class="colab-df-buttons">
 <div class="colab-df-container">
-<button class="colab-df-convert" onclick="convertToInteractive('df-5798fd91-ac36-43d3-a5b4-91683e772407')" style="display:none;" title="Convert this dataframe to an interactive table.">
+<button class="colab-df-convert" onclick="convertToInteractive('df-194dae30-63c5-4dae-a92c-5a574dc86854')" style="display:none;" title="Convert this dataframe to an interactive table.">
 <svg height="24px" viewbox="0 -960 960 960" xmlns="http://www.w3.org/2000/svg">
 <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
 </svg>
@@ -7932,12 +7922,12 @@ By doing the following exploratory analysis on the dataset, the relationships be
   </style>
 <script>
       const buttonEl =
-        document.querySelector('#df-5798fd91-ac36-43d3-a5b4-91683e772407 button.colab-df-convert');
+        document.querySelector('#df-194dae30-63c5-4dae-a92c-5a574dc86854 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-5798fd91-ac36-43d3-a5b4-91683e772407');
+        const element = document.querySelector('#df-194dae30-63c5-4dae-a92c-5a574dc86854');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -7955,8 +7945,8 @@ By doing the following exploratory analysis on the dataset, the relationships be
       }
     </script>
 </div>
-<div id="df-d736985a-58ff-4d53-b0a9-2a0973a72c02">
-<button class="colab-df-quickchart" onclick="quickchart('df-d736985a-58ff-4d53-b0a9-2a0973a72c02')" style="display:none;" title="Suggest charts">
+<div id="df-69a84d68-9734-4a83-a4c8-90ba2ef8b0fb">
+<button class="colab-df-quickchart" onclick="quickchart('df-69a84d68-9734-4a83-a4c8-90ba2ef8b0fb')" style="display:none;" title="Suggest charts">
 <svg height="24px" viewbox="0 0 24 24" width="24px" xmlns="http://www.w3.org/2000/svg">
 <g>
 <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"></path>
@@ -8069,13 +8059,13 @@ By doing the following exploratory analysis on the dataset, the relationships be
         }
         (() => {
           let quickchartButtonEl =
-            document.querySelector('#df-d736985a-58ff-4d53-b0a9-2a0973a72c02 button');
+            document.querySelector('#df-69a84d68-9734-4a83-a4c8-90ba2ef8b0fb button');
           quickchartButtonEl.style.display =
             google.colab.kernel.accessAllowed ? 'block' : 'none';
         })();
       </script>
 </div>
-<div id="id_b0342ff8-9b30-4c61-80d2-88969d18bc3f">
+<div id="id_37e9566f-a478-4cb7-a2f1-08c5d1498a0d">
 <style>
       .colab-df-generate {
         background-color: #E8F0FE;
@@ -8115,7 +8105,7 @@ By doing the following exploratory analysis on the dataset, the relationships be
 <script>
       (() => {
       const buttonEl =
-        document.querySelector('#id_b0342ff8-9b30-4c61-80d2-88969d18bc3f button.colab-df-generate');
+        document.querySelector('#id_37e9566f-a478-4cb7-a2f1-08c5d1498a0d button.colab-df-generate');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
@@ -8168,7 +8158,7 @@ memory usage: 83.7+ KB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [185]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"Duplicated:"</span><span class="p">)</span>
@@ -8210,7 +8200,7 @@ Describe:
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-<div class="colab-df-container" id="df-b50df044-59af-4c61-b69c-b7acdd56941e">
+<div class="colab-df-container" id="df-8e7ca695-275b-432a-967c-2c82cd89b559">
 <div>
 <style scoped="">
     .dataframe tbody tr th:only-of-type {
@@ -8324,7 +8314,7 @@ Describe:
 </div>
 <div class="colab-df-buttons">
 <div class="colab-df-container">
-<button class="colab-df-convert" onclick="convertToInteractive('df-b50df044-59af-4c61-b69c-b7acdd56941e')" style="display:none;" title="Convert this dataframe to an interactive table.">
+<button class="colab-df-convert" onclick="convertToInteractive('df-8e7ca695-275b-432a-967c-2c82cd89b559')" style="display:none;" title="Convert this dataframe to an interactive table.">
 <svg height="24px" viewbox="0 -960 960 960" xmlns="http://www.w3.org/2000/svg">
 <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
 </svg>
@@ -8371,12 +8361,12 @@ Describe:
   </style>
 <script>
       const buttonEl =
-        document.querySelector('#df-b50df044-59af-4c61-b69c-b7acdd56941e button.colab-df-convert');
+        document.querySelector('#df-8e7ca695-275b-432a-967c-2c82cd89b559 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-b50df044-59af-4c61-b69c-b7acdd56941e');
+        const element = document.querySelector('#df-8e7ca695-275b-432a-967c-2c82cd89b559');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -8394,8 +8384,8 @@ Describe:
       }
     </script>
 </div>
-<div id="df-4312ef60-debb-459f-aa51-5c264c690876">
-<button class="colab-df-quickchart" onclick="quickchart('df-4312ef60-debb-459f-aa51-5c264c690876')" style="display:none;" title="Suggest charts">
+<div id="df-44c79449-f968-4673-8aa9-dc8d9640f11e">
+<button class="colab-df-quickchart" onclick="quickchart('df-44c79449-f968-4673-8aa9-dc8d9640f11e')" style="display:none;" title="Suggest charts">
 <svg height="24px" viewbox="0 0 24 24" width="24px" xmlns="http://www.w3.org/2000/svg">
 <g>
 <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"></path>
@@ -8508,7 +8498,7 @@ Describe:
         }
         (() => {
           let quickchartButtonEl =
-            document.querySelector('#df-4312ef60-debb-459f-aa51-5c264c690876 button');
+            document.querySelector('#df-44c79449-f968-4673-8aa9-dc8d9640f11e button');
           quickchartButtonEl.style.display =
             google.colab.kernel.accessAllowed ? 'block' : 'none';
         })();
@@ -8558,7 +8548,7 @@ Describe:
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [186]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">contingency_table</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">crosstab</span><span class="p">(</span><span class="n">titanic_df</span><span class="p">[</span><span class="s1">'Pclass'</span><span class="p">],</span> <span class="n">titanic_df</span><span class="p">[</span><span class="s1">'Survived'</span><span class="p">])</span>
@@ -8593,7 +8583,7 @@ Chi-square: 102.9  p-value: 4.549e-23
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [187]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">survive_rate_class</span> <span class="o">=</span> <span class="n">contingency_table</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">/</span> <span class="n">contingency_table</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
@@ -8636,7 +8626,7 @@ Chi-square: 102.9  p-value: 4.549e-23
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [188]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">survival_num</span> <span class="o">=</span> <span class="n">contingency_table</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
@@ -8701,7 +8691,7 @@ Z = 5.79, p-value = 7.036e-09
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [189]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">fare_survived</span> <span class="o">=</span> <span class="n">titanic_df</span><span class="p">[</span><span class="n">titanic_df</span><span class="p">[</span><span class="s1">'Survived'</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">][</span><span class="s1">'Fare'</span><span class="p">]</span>
@@ -8769,7 +8759,7 @@ HA: Both groups have difference in fare</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [190]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># unpaired t-test</span>
@@ -8815,7 +8805,7 @@ Since both group has outliers, we decided to do a mann-whitney u test. It also g
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [191]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
@@ -8856,7 +8846,7 @@ Since both group has outliers, we decided to do a mann-whitney u test. It also g
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [192]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Convert sex to ints</span>
@@ -8889,7 +8879,7 @@ Since both group has outliers, we decided to do a mann-whitney u test. It also g
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [193]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">contingency</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">crosstab</span><span class="p">(</span><span class="n">titanic_df</span><span class="p">[</span><span class="s1">'Survived'</span><span class="p">],</span> <span class="n">titanic_df</span><span class="p">[</span><span class="s1">'Sex'</span><span class="p">])</span>
@@ -8943,7 +8933,7 @@ Survived
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [194]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">chi2</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">chi2_contingency</span><span class="p">(</span><span class="n">contingency</span><span class="p">)</span>
@@ -8987,7 +8977,7 @@ p-value:  1.197e-58
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [195]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">fisher_exact_result</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">fisher_exact</span><span class="p">(</span><span class="n">contingency</span><span class="p">,</span> <span class="n">alternative</span><span class="o">=</span><span class="s2">"two-sided"</span><span class="p">)</span>
@@ -9041,7 +9031,7 @@ P-value:  6.464e-60
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [196]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">sibsp_table</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">crosstab</span><span class="p">(</span><span class="n">titanic_df</span><span class="p">[</span><span class="s1">'SibSp'</span><span class="p">],</span> <span class="n">titanic_df</span><span class="p">[</span><span class="s1">'Survived'</span><span class="p">])</span>
@@ -9106,7 +9096,7 @@ SibSp
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [197]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">parch_table</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">crosstab</span><span class="p">(</span><span class="n">titanic_df</span><span class="p">[</span><span class="s1">'Parch'</span><span class="p">],</span> <span class="n">titanic_df</span><span class="p">[</span><span class="s1">'Survived'</span><span class="p">])</span>
@@ -9171,7 +9161,7 @@ Parch
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [198]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Fill MCAR with single imputing (median)</span>
@@ -9197,7 +9187,7 @@ Parch
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [199]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">age_survived</span> <span class="o">=</span> <span class="n">titanic_df</span><span class="p">[</span><span class="n">titanic_df</span><span class="p">[</span><span class="s2">"Survived"</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">][</span><span class="s2">"Age"</span><span class="p">]</span>
@@ -9263,7 +9253,7 @@ Name: Age, dtype: float64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [200]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># unpaired t-test</span>
@@ -9299,7 +9289,7 @@ mann-whitney u p value: 0.03985
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>The Mann-Whitney test gave a p-value of $3.99 \cdot 10^{-2}$, which is under our significance level of .05. We reject the null hypothesis, suggesting statistically significant differences between the age distributions of survivors vs non-survivors.
-However, the t-test had a p-value of $5.83 \cdot 10^{-2}$, which is over our significance level of .05, meaning we fail to reject the null hypothesis. This suggests that there is no statistical significance between the mean ages of those who survived and those who didn't
+However, the t-test had a p-value of $5.83 \cdot 10^{-2}$, which is over our significance level of .05, meaning we fail to reject the null hypothesis. This suggests that there is no statistical significance between the mean ages of those who survived and those who didn't.
 So, the averages may be similar, but the distributions of survivors' vs. non-survivors' age is different. We reject the null hypothesis based on the Mann-Whitney U test, but fail to reject it based on the t-test.</p>
 </div>
 </div>
@@ -9309,7 +9299,7 @@ So, the averages may be similar, but the distributions of survivors' vs. non-sur
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [201]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
@@ -9350,7 +9340,7 @@ So, the averages may be similar, but the distributions of survivors' vs. non-sur
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [202]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">cont</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">crosstab</span><span class="p">(</span><span class="n">titanic_df</span><span class="p">[</span><span class="s1">'Embarked'</span><span class="p">],</span> <span class="n">titanic_df</span><span class="p">[</span><span class="s1">'Survived'</span><span class="p">])</span>
@@ -9401,7 +9391,7 @@ Chi2: 26.49 p-value: 1.77e-06
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Model-Selection">Model Selection<a class="anchor-link" href="#Model-Selection">¶</a></h1><p>For our primary analysis, we have chosen to use a supervised classification model. Specifically, Logistic Regression to predict if a particular passenger survived based on their provided characteristics.</p>
+<h1 id="Primary-Analysis">Primary Analysis<a class="anchor-link" href="#Primary-Analysis">¶</a></h1><p>For our primary analysis, we have chosen to use a supervised classification model. Specifically, Logistic Regression to predict if a particular passenger survived based on their provided characteristics.</p>
 <p>Our target variable, Survived, is a binary value. This means using regression for a continuous value wouldn’t fit because this target variable better aligns with a classification problem. An unsupervised approach, like clustering, would reveal certain patterns but would not answer the question of whether a passenger survived directly. So, with the existence of pre-labeled data for the outcome of each passenger, using a supervised classification approach makes the most sense.</p>
 <p>There are several options for classification models, but logistic regression is a great fit for several reasons</p>
 <ul>
@@ -9429,7 +9419,7 @@ Chi2: 26.49 p-value: 1.77e-06
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [203]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">X</span> <span class="o">=</span> <span class="n">titanic_df</span><span class="p">[[</span><span class="s1">'Pclass'</span><span class="p">,</span> <span class="s1">'Sex'</span><span class="p">,</span> <span class="s1">'Age'</span><span class="p">,</span> <span class="s1">'SibSp'</span><span class="p">,</span> <span class="s1">'Parch'</span><span class="p">,</span> <span class="s1">'Fare'</span><span class="p">]]</span>
@@ -9494,7 +9484,7 @@ Recall: 0.716
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [204]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">options</span><span class="o">.</span><span class="n">mode</span><span class="o">.</span><span class="n">chained_assignment</span> <span class="o">=</span> <span class="kc">None</span>  <span class="c1"># default='warn'</span>
@@ -9555,7 +9545,7 @@ Recall: 0.743
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [205]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">X</span> <span class="o">=</span> <span class="n">titanic_df</span><span class="p">[[</span><span class="s2">"Pclass"</span><span class="p">,</span><span class="s2">"Sex"</span><span class="p">,</span><span class="s2">"Age"</span><span class="p">,</span><span class="s2">"SibSp"</span><span class="p">,</span><span class="s2">"Parch"</span><span class="p">,</span><span class="s2">"Fare"</span><span class="p">,</span><span class="s2">"Embarked"</span><span class="p">]]</span>
@@ -9621,7 +9611,7 @@ Recall: 0.730
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [206]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.model_selection</span><span class="w"> </span><span class="kn">import</span> <span class="n">KFold</span><span class="p">,</span> <span class="n">cross_val_score</span>
@@ -9663,7 +9653,7 @@ Average Accuracy: 0.79
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Our first model that used a single train/test split has an accuracy of 0.81. A more reliable estimate can be found by found by using k-fold cross validation. The mean accuracy when k=5 was 0.79, which is extremely close to the original model's accuracy of 0.804.</p>
+<p>Our first model that used a single train/test split has an accuracy of 0.81. A more reliable estimate can be found by found by using k-fold cross validation. The mean accuracy when k=5 was 0.79, which is extremely close to the original model's accuracy of 0.81.</p>
 <p>This small difference suggests the initial model, while slightly better, is within performance expectations for the real world. Additional model complexity is likely unneeded since performance gains would be marginal. These results show the model already generalizes well.</p>
 </div>
 </div>
@@ -9684,7 +9674,7 @@ Average Accuracy: 0.79
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [207]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">confidence_scores</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">decision_function</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
@@ -9755,7 +9745,7 @@ Average Accuracy: 0.79
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [208]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">accuracy</span> <span class="o">=</span> <span class="p">(</span><span class="n">tp</span> <span class="o">+</span> <span class="n">tn</span><span class="p">)</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
@@ -9816,7 +9806,7 @@ Average Accuracy: 0.79
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [209]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">feature_names</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">columns</span>
@@ -9878,5 +9868,3 @@ On the contrary, age and fare is the least accurate predictor of the survivabili
 </main>
 </body>
 </html>
-
-
